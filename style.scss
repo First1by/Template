@@ -1,0 +1,67 @@
+$maxWidth: 1640px;
+$widthIconMobile: 36px;
+$heigthIconMurger: 36px;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+p,
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #478bf9;
+  transition: color 0.4s linear;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: #fff;
+
+  .header__top-bar {
+    padding: 0.5rem 0;
+    background: #eee;
+
+    .header__top-bar-container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 15px;
+
+      .header__top-bar-items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+      }
+    }
+  }
+}
